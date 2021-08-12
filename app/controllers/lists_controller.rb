@@ -8,11 +8,13 @@ class ListsController < ApplicationController
   end
 
   def new
-    @list = List.new()
+    @list = List.new
   end
 
   def create
     @list = List.create(list_params)
+    @list.save
+    redirect_to lists_path
   end
 
   private
