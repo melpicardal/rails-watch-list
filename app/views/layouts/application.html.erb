@@ -14,6 +14,29 @@
   </head>
 
   <body>
+  <%# LOGO %>
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <%= link_to lists_path, class: "navbar-brand" do %>
+      <%= image_tag "man_at_movies.png" %>My Lists
+    <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="d-flex d-row align-items-center nav-item active mr-3">
+          <%= link_to ('<i class="fas fa-edit"></i> Make A List').html_safe, new_list_path, class: "nav-link" %>
+        </li>
+        <li class="d-flex d-row align-items-center nav-item">
+          <%= link_to ('<i class="fas fa-video"></i> Movies').html_safe, movies_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
     <%= yield %>
   </body>
 </html>

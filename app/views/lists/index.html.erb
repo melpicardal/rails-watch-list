@@ -1,8 +1,19 @@
-<div class="container">
-  <h1>All the lists</h1>
-   <% @lists.each do |list| %>
-   <li><%= link_to list.name, list_path(list) %></li>
-   <% end %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.giphy.com/media/2UvAUplPi4ESnKa3W0/giphy.gif);">
+  <div class="container">
+    <h1>MOVIE WATCH LIST</h1>
+    <p class="typed-strings">A curation of my favorite movies.</p>
+    <%= link_to 'Make A List', new_list_path, class: "btn btn-danger" %>
+  </div>
+</div>
 
-   <p><%= link_to "create new list", new_list_path %>
+
+<div class="container my-3">
+  <h1 class="text-left my-3">My Lists</h1>
+    <div class="cards">
+      <% @lists.each do |list| %>
+        <div class="card-category", style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/featured/?movies,<%= list.name %>)">
+         <h1><%= link_to list.name, list_path(list) %></h1>
+        </div>
+      <% end %>
+    </div>
 </div>

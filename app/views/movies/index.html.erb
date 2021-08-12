@@ -1,0 +1,10 @@
+<div class="container mt-5">
+<h1>Movies List</h1>
+<div class="cards mt-3">
+      <% @movies.each do |movie| %>
+        <div class="card-category cards-movies", style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= movie.poster_url %>)">
+        </div>
+      <% end %>
+    </div>
+
+</div>

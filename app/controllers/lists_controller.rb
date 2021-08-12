@@ -13,7 +13,16 @@ class ListsController < ApplicationController
 
   def create
     @list = List.create(list_params)
-    @list.save
+    if @list.save
+      redirect_to lists_path
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @list = List.find(params[:id])
+    @list.destroy
     redirect_to lists_path
   end
 
