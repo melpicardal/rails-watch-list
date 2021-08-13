@@ -20,5 +20,4 @@ import { typed } from '../components/typed';
 
 document.addEventListener("turbolinks:load", function () {
   initSelect2();
-  typed();
 });
