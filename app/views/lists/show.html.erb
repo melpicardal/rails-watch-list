@@ -5,6 +5,7 @@
   </div>
 </div>
 <div class="container my-3">
+<%= cl_image_tag @bookmark.photo.key, height: 300, width: 400, crop: :fill %>
   <div class="d-flex align-items-center justify-content-between">
     <h1 class="text-left my-3">Movies</h1>
     <%= link_to ('<i class="fas fa-trash"></i> Delete List').html_safe, lists_path, method: :delete, data: { confirm: 'you sure?'} %>
