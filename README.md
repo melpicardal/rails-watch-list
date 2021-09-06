@@ -1,24 +1,48 @@
-# README
+# 📚 Project Name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Academic Project] -  A web app created to show comprehension of Ruby on Rails, MVC pattern, APIs, Bootstrap, and CSS. Used Figma to prototype and deployed on Heroku.
 
-Things you may want to cover:
 
-* Ruby version
+App home: https://mp-watch-list.herokuapp.com
+   
 
-* System dependencies
+### Setup
 
-* Configuration
+Install gems
+```
+bundle install
+```
+Install JS packages
+```
+yarn install
+```
 
-* Database creation
+### ENV Variables
+Create `.env` file
+```
+touch .env
+```
+Inside `.env`, set these variables. For any APIs, see group Slack channel.
+```
+CLOUDINARY_URL=your_own_cloudinary_url_key
+```
 
-* Database initialization
+### DB Setup
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
 
-* How to run the test suite
+### Run a server
+```
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built With
+- [Rails 6](https://guides.rubyonrails.org/) - Backend / Front-end
+- [Stimulus JS](https://stimulus.hotwired.dev/) - Front-end JS
+- [Heroku](https://heroku.com/) - Deployment
+- [PostgreSQL](https://www.postgresql.org/) - Database
+- [Bootstrap](https://getbootstrap.com/) — Styling
+- [Figma](https://www.figma.com) — Prototyping
