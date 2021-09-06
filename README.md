@@ -1,4 +1,4 @@
-# 📚 Project Name
+Rails Watch List 🎥
 
 [Academic Project] -  A web app created to show comprehension of Ruby on Rails, MVC pattern, APIs, Bootstrap, and CSS. Used Figma to prototype and deployed on Heroku.
 
